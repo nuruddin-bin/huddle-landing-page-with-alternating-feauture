@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-Open-Sans);
+}
+
+:root{
+    /* primary color */
+    --Pink: hsl(322, 100%, 66%);
+
+    /* natural color */
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+
+    /* font family */
+    --ff-Open-Sans: 'Open Sans', sans-serif;
+    --ff-Poppins: 'Poppins', sans-serif;
+
+    /* font waite */
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+body{
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
