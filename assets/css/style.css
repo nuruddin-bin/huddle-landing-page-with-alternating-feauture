@@ -135,6 +135,74 @@ body{
 }
 
 
+/*------------- main ---------------*/
+.main{
+    background-color: transparent;
+    width: 100%;
+}
+
+/*--- banner ---*/
+.banner{
+    background-color: transparent;
+    width: 100%;
+    margin-inline: auto;
+    padding: 9.5rem 3rem;
+}
+
+.banner > :nth-child(2){
+    margin: 2.5rem auto;
+}
+
+/* all card */
+.banner__card{
+    background-color: transparent;
+    width: min(90rem, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 1.8rem 3.5rem 7.5rem;
+    margin-inline: auto;
+    border-radius: 1rem;
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.banner__text-area{
+    width: 50%;
+}
+
+.banner__text-adjust{
+    width: fit-content;
+}
+
+.banner__h3{
+    color: var(--Very-Dark-Cyan);
+    font-size: 2rem;
+    font-family: var(--ff-Poppins);
+    font-weight: var(--fw-semi-bold);
+}
+
+.banner__p{
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+    color: var(--Grayish-Blue);
+    max-width: 49ch;
+    margin-top: 1rem;
+}
+
+.banner__img-area{
+    width: 50%;
+}
+
+.banner__img{
+    display: block;
+    width: 85%;
+}
+
+.banner__img-adjust{
+    margin-left: auto;
+}
+
+
 
 
 
@@ -170,6 +238,11 @@ body{
     .header__h1{
         font-size: 2rem;
     }
+
+     /*------------- main ---------------*/
+     .banner{
+         padding: 9.5rem 1rem;
+     }
 }
 
 
@@ -226,6 +299,42 @@ body{
         margin-top: 2.5rem;
         width: min(30rem, 100%);
         margin-inline: auto;
+    }
+
+    /*------------- main ---------------*/
+    .banner > :nth-child(2){
+        flex-direction: column;
+    }
+
+    .banner__card{
+        flex-direction: column-reverse;
+        padding-left: 1.8rem;
+    }
+
+    .banner__text-area{
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner__h3{
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .banner__p{
+        font-size: .9rem;
+        margin-top: 2rem;
+        margin-inline: auto;
+        max-width: 75ch;
+    }
+
+    .banner__img-area{
+        width: 100%;
+    }
+
+    .banner__img{
+        width: min(20rem, 100%);
+        margin: 0 auto;
     }
 }
 
