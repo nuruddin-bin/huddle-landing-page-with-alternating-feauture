@@ -146,7 +146,7 @@ body{
     background-color: transparent;
     width: 100%;
     margin-inline: auto;
-    padding: 9.5rem 3rem;
+    padding: 9.5rem 3rem 3rem 3rem;
 }
 
 .banner > :nth-child(2){
@@ -200,6 +200,47 @@ body{
 
 .banner__img-adjust{
     margin-left: auto;
+}
+
+/*------------- community box ---------------*/
+.main__community-box{
+    box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.1);
+    width: min(50rem, 95%);
+    margin-inline: auto;
+    padding: 4.5rem 0 3rem 0;
+    border-radius: 1rem;
+    transform: translateY(5rem);
+    background-color: #fff;
+}
+
+.main__h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--Very-Dark-Cyan);
+    font-family: var(--ff-Poppins);
+    font-weight: var(--fw-semi-bold);
+    padding: 0 1rem;
+}
+
+.pink__btn-2{
+    text-decoration: none;
+    color: var(--Very-Pale-Cyan);
+    background-color: var(--Pink);
+    border-radius: 5rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+    display: block;
+    width: min(26rem, 100%);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem 4rem;
+    font-family: var(--ff-Poppins);
+    font-weight: var(--fw-semi-bold);
+    transition: .3s;
+}
+
+.pink__btn-2:hover{
+    opacity: .8;
 }
 
 
@@ -381,7 +422,7 @@ body{
 
      /*------------- main ---------------*/
      .banner{
-         padding: 9.5rem 1rem;
+        padding: 9.5rem 1rem 3rem 1rem;
      }
 }
 
@@ -520,6 +561,38 @@ body{
     }
 
 }
+
+
+@media(max-width: 677px){
+    /*------------- main ---------------*/
+
+    /* --- community*---*/
+    .main__h2{
+        font-size: 2rem;
+    }
+
+    .pink__btn-2{
+        width: min(19rem, 90%);
+        font-size: .9rem;
+        padding: 1rem 3rem;
+    }
+}
+
+
+@media(max-width: 602px){
+    /*------------- main ---------------*/
+
+    /*--- banner ---*/
+    .banner{
+        padding: 9.5rem 1rem 0rem 1rem;
+    }
+
+    /* --- community*---*/
+    .main__h2{
+        font-size: 1.5rem;
+    }
+}
+
 
 
 @media(max-width: 375px){
